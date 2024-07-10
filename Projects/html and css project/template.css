@@ -1023,9 +1023,12 @@ li{
 .mobile-response-card{
     display: none;
 }
-.phone_mockup_3{
+.phone_mockup_2{
     display: none;
 }
+/* .phone_mockup_3{
+    display: show;
+} */
 
 @media(max-width:900px) {
     .nav-menu{
@@ -1077,309 +1080,140 @@ li{
         gap: 200px;
     }
 }
-/* @media(max-width:615px){
+@media(max-width:615px){
+    .bg-container{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .woman_doing_situps{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 76px;
+    }
+    .premium_facilities-container{
+        height: auto;
+        padding: 60px 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .premium_facilities-body-content{
+        width: 100%;
+        gap: 10px;
+    }
+    .premium_facilities-image{
+        width: 100%;
+        padding: 187px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .woman_doing_situps h1{
+        text-align: center;
+        padding: 15%;
+    }
    
-     .container{
-        width: -webkit-fill-available;
-     }
+    .weights{
+        bottom: 80px;
+        right: 100px;
+    }
+    .gym_Room{
+        left: 60px;
+        top: 14px;
+        
+    }
     .nav-menu{
         display: none;
     }
-    .mobile-search-bar{
-        display: block;
-    }
-    
     .social-hover-card{
         display: none;
     }
-    
-    nav h1 {
-        font-family: Poppins;
-        font-size: 25px;
-        font-weight: 800;
-        line-height: 43.8px;
-        text-align: center;
-        color: #ffffff;
-    }
-    
-    .container .burger div{
-        width:10px;
-        height:2px;
-        display: block;
-        margin:2px;
-        background-color: #FFFFFF;
-        
-    }
-   
-    .mobile-response-card{
-        display: none;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-    .bg-container {
-        height: 45vh;
-        background-size: 100% 50vh;
-        background-repeat: no-repeat;  
-    }
-    .bg-container h1{
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 36px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    .bg-img-content-span{
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 36px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    .path-2-container{
-        height: 10px;
-    }
     .meet-your-body-container{
-        position: relative;
-        height: 100vh;
+        flex-direction: column;
     }
-    .woman_doing_situps{
-        background-size: 100% 80vh;
-        background-repeat: no-repeat;
-        margin-top: 150px;
-    }
-    .meet-your-body-image{
-        position: absolute;
-        top: 0px;
+    .meet-your-body-image {
+        width: 100%;
+        left: 55px;
     }
     .meet-your-body-content{
-        position: absolute;
-        top: 370px;
-        width: 90%;
+        width: 100%;
     }
-    .female_doing{
-        width: 170px;
-        height: 220px;
-        top: 145px;
-        left: 195px;
-    }
-    .male_lifting {
-        width: 180px;
-        height: 250px;
-        top: 50px;
-        left: 70px;
-    }
-    .meet-your-body-content h1{
-        font-size: 50px;
-        font-weight: 900;
-        padding-right: 90px;
-    }
-    .meet-your-body-content button{
-        width: 90%;
-        height: 60px;
-        border-width: 3px;
-        font-weight: 900;
-        margin: 0px 20px;
-    }
-    .woman_doing_situps h1{
-        padding: 0px 55px;
-        text-align: center;
-        line-height: 60px;   
-    }
-    .woman_doing_situps p{
-        padding: 15px;
-    }
-    .woman_doing_situps button{
-        width: 90%;
-        height: 60px;
-    }
-    .premium_facilities-container{
-        height: 100vh;
+    .mobil_img_section {
         position: relative;
-    }
-    .premium_facilities-body-content{
-        position: absolute;
-        bottom: 0;
-        width: 90%;
-        top: 210px;
-        padding: 20px;
-    }
-    .weights{
-        position: absolute;
-        top: -115px;
-        left: 262px;
-    }
-    .gym_Room{
-        position: absolute;
-        top: -200px;
-        left: 165px;
-    }
-    .premium_facilities-image{
-        position: absolute;
-        top: 120px;
-        right: 145px;
         width: 100%;
+        /* padding: 106px 103px; */
     }
-    .premium_facilities-body-content button{
-        width: 100%;
-        height: 60px;
-        border-width: 3px;
-        font-weight: 900;
+    .phone_mockup_1{
+        left: 202px;
+        top: -234px;
     }
-    .premium_facilities-body-content h1{
-        padding-right: 75px;
+    .phone_mockup_2{
+        left: 418px;
+        top: -73px;
     }
-    .real_story_container{
-        height: 85vh;
-        margin-top: 20px;
+    .phone_mockup_3{
+        position: absolute;
+        top: -87px;
+        right: 0px;
     }
     .s-card{
         display: none;
     }
-    .lost_card_3kg {
-        top: 125px;
-        left: 45px;
-        width: 320px;
+    .real_stories{
+        display: none;
+    }
+    .real_story_body{
+        left: 135px;
     }
     .lost_card_17kg{
-        top: 125px;
-        left: 410px;
-        height: 360px;
+        display: none;
     }
     .lost_card_14kg{
         display: none;
     }
-    .real_story_body{
-        top: 0;
-        left: 25px;
+    .lost_card_3kg{
+        top: 200px;
+        left: 130px;
     }
-    .real_story_body h1{
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 33.16px;
-        text-align: left;
+    .real_story_container{
+        padding: 300px;
     }
-    .real_story_body p{
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 27px;
-        text-align: left;
+    .mobile-response-card{
+        display: block;
     }
-    .app_card{
-        display: flex;
-        flex-direction: column;
-        height: 150vh;
+    .line1, .line2, .line3{
+        background-color: #FFFFFF;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 5px;
+    }
+    .social-hover-card{
+        display: none;
     }
     .forget_section{
         width: 100%;
-        gap: 25px;
-        padding: 50px;
     }
-    .forget_section h1{
-        padding-right: 50px;
-    }
-    .forget_section p{
-        line-height: 30px;
-    }
-    .phone_mockup_1{
-        top: -20px;
-        left: 30px;
-    }
-    .phone_mockup_2{
-        display: none;
-    }
-    .phone_mockup_3{
-        display: block;
-        position: absolute;
-        top: 110px;
-        left: 285px;
+    .app_card{
+        flex-direction: column;
+        gap: 200px;
     }
     .social_media_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
-        height: 40vh;
-    }
-    .social_media_container h1{
-        font-size: 30px;
-    }
-    .social_media_images{
-        gap: 10px;
-    }
-    .social_images{
-        width: 80px;
-        height: 80px;
+        height: auto;
+        padding: 60px;
     }
     .footer-card{
-        height: 140vh;
-        padding: 50px;
+        height: auto;
     }
     .footer-top-part{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-    .links-card{
-        width: 100%;
-        margin-bottom: 100px;text-align: center;
-    }
-    .reach-us-card{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-bottem-part{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        padding-top: 20px;
-        padding-left: 0px;
-        gap: 20px;
-    }
-    .terms-card{
-        text-align: center;
-    }
-    .links-card h1{
-        margin-top: 15px;
-        margin-bottom: 10px;
-        font-size: 20px;
-        text-align: center;
-    }
-    .reach-us-card h1{
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-    .guides-card{
+    .real_storie{
         display: none;
     }
-    .footer-top-first-par{
-        text-align: center;
-    }
-    .footer-top-first-part h1{
-        font-size: 35px;
-        text-align: center;
-    }
-    .footer-top-first-part p{
-        font-size: 17px;
-        text-align: center;
-    }
-    .links-card a{
-        font-size: 17px;
-    }
-    .reach-us-card  a{
-        font-size: 17px;
-    }
-    .footer-bottem-part a{
-        font-size: 17px;
-    }
-    .footer-bottem-part p{
-        font-size: 17px;
-        text-align: center;
-    }
-} */
+} 
 /*@media(max-width:900px){
      .bg-container{
         height: 45vh;
