@@ -344,8 +344,9 @@ li{
     background-image: linear-gradient(#FFFFFF, #F4E3E9);
     position: relative;
     gap: 30px;
-    height: 70vh;
-    overflow-x: auto;
+    height: 100vh;
+  
+   
 }
 
 .real_stories {
@@ -357,13 +358,19 @@ li{
     left: 180px;
 }
 
-.real_story_body {
+/* .real_story_body {
     position: absolute;
     top: 30px;
     left: 220px;
+} */
+.real_story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
-
-.real_story_body h1 {
+.real_story h1 {
     font-family: Poppins;
     font-size: 48px;
     font-weight: 600;
@@ -372,7 +379,7 @@ li{
     color: #424242;
 }
 
-.real_story_body p {
+.real_story p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -380,7 +387,14 @@ li{
     text-align: left;
     color: #424242;
 }
-
+.gym-right-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
 .card_content {
     display: flex;
 }
@@ -389,20 +403,19 @@ li{
     padding-left: 5px;
 }
 
-.lost_card_3kg {
+.lost_cards_3kg {
     background-color: #FFFFFF;
     width: 350px;
     height: 360px;
     border-radius: 5px;
     padding: 25px;
     gap: 20px;
-    position: absolute;
     top: 195px;
     left: 295px;
     box-shadow: 1px 4px 8px 0px #0000002E;
 }
 
-.lost_card_3kg h1 {
+.lost_cards_3kg h1 {
     font-family: Poppins;
     font-size: 38px;
     font-weight: 600;
@@ -411,12 +424,12 @@ li{
     color: #E43071;
 }
 
-.lost_card_3kg img {
-    width: 20px;
-    height: 20px;
+.lost_cards_3kg img {
+    width: 45px;
+    height: 45px;
 }
 
-.lost_card_3kg p {
+.lost_cards_3kg p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -427,25 +440,24 @@ li{
 .lost_card_3kg:hover{
     border: 2px solid blue;
 }
-.lost_card_17kg {
+.lost_cards_17kg {
     background-color: #FFFFFF;
     width: 360px;
     height: 310px;
     border-radius: 5px;
     padding: 25px;
     gap: 20px;
-    position: absolute;
     top: 70px;
     right: 390px;
     box-shadow: 1px 4px 8px 0px #0000002E;
 }
 
-.lost_card_17kg img {
+.lost_cards_17kg img {
     width: 20px;
     height: 20px;
 }
 
-.lost_card_17kg h1 {
+.lost_cards_17kg h1 {
     font-family: Poppins;
     font-size: 38px;
     font-weight: 600;
@@ -453,8 +465,15 @@ li{
     text-align: left;
     color: #E43071;
 }
-
-.lost_card_17kg p {
+.gym-cards-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 110px;
+}
+.lost_cards_17kg p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -462,7 +481,7 @@ li{
     text-align: left;
     color: #424242;
 }
-.lost_card_17kg:hover{
+.lost_cards_17kg:hover{
     border: 2px solid blue;
 }
 
@@ -500,20 +519,19 @@ li{
     border-radius: 50%;
 }
 
-.lost_card_14kg {
+.lost_cards_14kg {
     background-color: #FFFFFF;
-    width: 280px;
+    width: 360px;
     height: 210px;
     border-radius: 5px;
     padding: 25px;
     gap: 20px;
-    position: absolute;
     right: 465px;
     top: 400px;
     box-shadow: 1px 4px 8px 0px #0000002E;
 }
 
-.lost_card_14kg h1 {
+.lost_cards_14kg h1 {
     font-family: Poppins;
     font-size: 38px;
     font-weight: 600;
@@ -521,7 +539,7 @@ li{
     text-align: left;
     color: #E43071;
 }
-.lost_card_14kg:hover{
+.lost_cards_14kg:hover{
     border: 2px solid blue;
 }
 
@@ -534,7 +552,7 @@ li{
     top: 560px;
     left: 150px;
     box-shadow: 1px 4px 8px 0px #0000002E;
-    display: block;
+    display: none;
 }
 
 .s-card h1 {
@@ -640,6 +658,7 @@ li{
     box-shadow: 1px 4px 8px 0px #0000002E;
     bottom: 20px;
     left: 1000px;
+    display: none;
 }
 
 .social-hover-card .social-hover1 {
@@ -856,7 +875,7 @@ li{
 
 .footer-card {
     background-color: #0B0D17;
-    height: 60vh;
+    height: auto;
     padding: 100px;
 }
 
@@ -1024,11 +1043,11 @@ li{
     display: none;
 }
 .phone_mockup_2{
+    display: block;
+}
+.phone_mockup_3{
     display: none;
 }
-/* .phone_mockup_3{
-    display: show;
-} */
 
 @media(max-width:900px) {
     .nav-menu{
@@ -1081,7 +1100,13 @@ li{
     }
 }
 @media(max-width:615px){
-    .bg-container{
+    .gym-right-cards{
+        display: none;
+    }
+    body{
+        width: fit-content;
+    }
+    .container{
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
@@ -1144,7 +1169,6 @@ li{
     .mobil_img_section {
         position: relative;
         width: 100%;
-        /* padding: 106px 103px; */
     }
     .phone_mockup_1{
         left: 202px;
@@ -1154,9 +1178,13 @@ li{
         left: 418px;
         top: -73px;
     }
+    .phone_mockup_2{
+        display: none;
+    }
     .phone_mockup_3{
+        display: block;
         position: absolute;
-        top: -87px;
+        top: -80px;
         right: 0px;
     }
     .s-card{
@@ -1165,9 +1193,7 @@ li{
     .real_stories{
         display: none;
     }
-    .real_story_body{
-        left: 135px;
-    }
+   
     .lost_card_17kg{
         display: none;
     }
@@ -1214,121 +1240,145 @@ li{
         display: none;
     }
 } 
-/*@media(max-width:900px){
-     .bg-container{
-        height: 45vh;
-        background-size: 100% 50vh;
-        background-repeat: no-repeat;
-    }
-    .woman_doing_situps{
-        background-size: 100% 80vh;
-        background-repeat: no-repeat;
-        margin-top: 150px;
-    }
-    .social-hover-card{
-        left: 740px;
-    }
-    .real_story_container{
-        height: 100vh;
-    }
-    .real_stories{
-        display: block;
-        left: 90px;
-    }
-    .real_story_body{
-        left: 134px;
-    }
-    .lost_card_3kg{
-        left: 210px;
-    }
-    .lost_card_14kg{
-        right: 130px;
-    }
-    .lost_card_17kg{
-        right: 51px;
-    }
-    .footer-card{
-        height: 45vh;
-    }
-    .forget_section{
-        padding: 79px;
-    }
-    .app_card{
-        height: 60vh;
-    }
-    .phone_mockup_2{
-        left: 209px;
-        top: 98px;
-    }
-    .meet-your-body-content{
-        margin-top: 100px;
-    }
-    .woman_doing_situps{
-        background-size: 100% 50vh;
-        background-repeat: no-repeat;
-        margin-top: 140px;
-        height: 40vh;
-    }
-    .social_media_container .social_media_container_heading {
-        padding-top: 60px;
-    }
-    .footer-bottem-part{
-        padding-left: 30pxx;
-    } 
-}*/
-/* @media(max-width:425px){
-    .bg-container {
-        background-size: 100% 85vh;
-        background-repeat: no-repeat;
-        height: 35vh; 
-    }
-    .lost_card_3kg{
-        left: 50px;
-    }
-    .real_stories{
+
+@media(max-width:360px){
+    .gym-right-cards{
         display: none;
     }
-    .real_story_body{
-        left: 50px;
+    body{
+        width: fit-content;
     }
-    .meet-your-body-container{
-        height: 72vh;
+    .container{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
-    .gym_Room{
-        top: -80px;
-        left: 180px;
-    }
-    .weights{
-        top: 10px;
-        left: 283px;
-    }
-    .premium_facilities-body-content{
-        top: 300px;
+    .woman_doing_situps{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 76px;
     }
     .premium_facilities-container{
-        height: 71vh;
+        height: auto;
+        padding: 60px 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
-    .real_story_container{
-        height: 52vh;
+    .premium_facilities-body-content{
+        width: 100%;
+        gap: 10px;
     }
-    .app_card{
-        height: 95vh;
+    .premium_facilities-image{
+        width: 100%;
+        padding: 187px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .woman_doing_situps h1{
+        text-align: center;
+        padding: 15%;
+    }
+   
+    .weights{
+        bottom: 80px;
+        right: 100px;
+    }
+    .gym_Room{
+        left: 60px;
+        top: 14px;
+        
+    }
+    .nav-menu{
+        display: none;
+    }
+    .social-hover-card{
+        display: none;
+    }
+    .meet-your-body-container{
+        flex-direction: column;
+    }
+    .meet-your-body-image {
+        width: 100%;
+        left: 55px;
+    }
+    .meet-your-body-content{
+        width: 100%;
+    }
+    .mobil_img_section {
+        position: relative;
+        width: 100%;
+    }
+    .phone_mockup_1{
+        left: 202px;
+        top: -234px;
+    }
+    .phone_mockup_2{
+        left: 418px;
+        top: -73px;
+    }
+    .phone_mockup_2{
+        display: none;
     }
     .phone_mockup_3{
-        left: 294px;
+        display: block;
+        position: absolute;
+        top: -80px;
+        right: 0px;
     }
-    .social_media_container{
-        height: 26vh;
-        padding: 0px;
+    .s-card{
+        display: none;
     }
-    .forget_section-img{
-        display: flex;
-        gap: 15px;
+    .real_stories{
+        display: none;
     }
-    .footer-card{
-        height: 80vh;
-    }
+   
     .lost_card_17kg{
         display: none;
     }
-} */
+    .lost_card_14kg{
+        display: none;
+    }
+    .lost_card_3kg{
+        top: 200px;
+        left: 130px;
+    }
+    .real_story_container{
+        padding: 300px;
+    }
+    .mobile-response-card{
+        display: block;
+    }
+    .line1, .line2, .line3{
+        background-color: #FFFFFF;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 5px;
+    }
+    .social-hover-card{
+        display: none;
+    }
+    .forget_section{
+        width: 100%;
+    }
+    .app_card{
+        flex-direction: column;
+        gap: 200px;
+    }
+    .social_media_container{
+        height: auto;
+        padding: 60px;
+    }
+    .footer-card{
+        height: auto;
+    }
+    .footer-top-part{
+        flex-direction: column;
+    }
+    .real_storie{
+        display: none;
+    }
+}  
